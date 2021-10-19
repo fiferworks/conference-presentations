@@ -1,0 +1,133 @@
+Generalized linear mixed model fit by maximum likelihood
+  (Laplace Approximation) [glmerMod]
+ Family: poisson  ( log )
+Formula: eriophyoids ~ month * other_mites + (1 | id)
+   Data: df
+      AIC       BIC    logLik  deviance  df.resid 
+1402.4903 1442.9847 -684.2451 1368.4903        63 
+Random effects:
+ Groups Name        Std.Dev.
+ id     (Intercept) 0.2933  
+Number of obs: 80, groups:  id, 4
+Fixed Effects:
+              (Intercept)                 monthApril  
+                  1.66045                   -1.22938  
+                monthJune                monthAugust  
+                  1.15340                    0.83976  
+             monthOctober              monthNovember  
+                -19.31849                   -0.57260  
+                 monthMay                  monthJuly  
+                  0.32996                    0.80311  
+              other_mites     monthApril:other_mites  
+                  0.13875                    0.10432  
+    monthJune:other_mites    monthAugust:other_mites  
+                 -0.14105                   -0.12729  
+ monthOctober:other_mites  monthNovember:other_mites  
+                 -0.18514                   -0.09529  
+     monthMay:other_mites      monthJuly:other_mites  
+                 -0.11797                   -0.11260  
+optimizer (Nelder_Mead) convergence code: 0 (OK) ; 0 optimizer warnings; 1 lme4 warnings 
+Generalized linear mixed model fit by maximum likelihood
+  (Laplace Approximation) [glmerMod]
+ Family: poisson  ( log )
+Formula: eriophyoids ~ month * other_mites + (1 | id)
+   Data: df
+
+     AIC      BIC   logLik deviance df.resid 
+  1402.5   1443.0   -684.2   1368.5       63 
+
+Scaled residuals: 
+   Min     1Q Median     3Q    Max 
+-5.170 -2.529 -1.288  1.740 19.708 
+
+Random effects:
+ Groups Name        Variance Std.Dev.
+ id     (Intercept) 0.08601  0.2933  
+Number of obs: 80, groups:  id, 4
+
+Fixed effects:
+                           Estimate Std. Error z value Pr(>|z|)
+(Intercept)                 1.66045    0.21148   7.852 4.11e-15
+monthApril                 -1.22938    0.68398  -1.797 0.072273
+monthJune                   1.15340    0.15959   7.227 4.92e-13
+monthAugust                 0.83976    0.22634   3.710 0.000207
+monthOctober              -19.31849  165.32586  -0.117 0.906978
+monthNovember              -0.57260    0.57647  -0.993 0.320569
+monthMay                    0.32996    0.37824   0.872 0.383004
+monthJuly                   0.80311    0.18415   4.361 1.29e-05
+other_mites                 0.13875    0.01507   9.210  < 2e-16
+monthApril:other_mites      0.10432    0.10693   0.976 0.329252
+monthJune:other_mites      -0.14105    0.01536  -9.181  < 2e-16
+monthAugust:other_mites    -0.12729    0.02249  -5.661 1.51e-08
+monthOctober:other_mites   -0.18514  111.46252  -0.002 0.998675
+monthNovember:other_mites  -0.09529    0.02136  -4.462 8.12e-06
+monthMay:other_mites       -0.11797    0.02786  -4.235 2.29e-05
+monthJuly:other_mites      -0.11260    0.02033  -5.538 3.05e-08
+                             
+(Intercept)               ***
+monthApril                .  
+monthJune                 ***
+monthAugust               ***
+monthOctober                 
+monthNovember                
+monthMay                     
+monthJuly                 ***
+other_mites               ***
+monthApril:other_mites       
+monthJune:other_mites     ***
+monthAugust:other_mites   ***
+monthOctober:other_mites     
+monthNovember:other_mites ***
+monthMay:other_mites      ***
+monthJuly:other_mites     ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+optimizer (Nelder_Mead) convergence code: 0 (OK)
+Model is nearly unidentifiable: large eigenvalue ratio
+ - Rescale variables?
+
+Analysis of Deviance Table (Type II Wald chisquare tests)
+
+Response: eriophyoids
+                     Chisq Df Pr(>Chisq)    
+month              36.7576  7  5.213e-06 ***
+other_mites         5.5026  1    0.01899 *  
+month:other_mites 101.0258  7  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+No documentation for ‘linfct’ in specified packages and libraries:
+you could try ‘??linfct’
+Generalized linear mixed model fit by maximum likelihood
+  (Laplace Approximation) [glmerMod]
+ Family: poisson  ( log )
+Formula: eriophyoids ~ month + (1 | id)
+   Data: df
+      AIC       BIC    logLik  deviance  df.resid 
+1501.4698 1522.9081 -741.7349 1483.4698        71 
+Random effects:
+ Groups Name        Std.Dev.
+ id     (Intercept) 0.2782  
+Number of obs: 80, groups:  id, 4
+Fixed Effects:
+  (Intercept)     monthApril      monthJune    monthAugust  
+      2.63938       -0.84730        0.16170       -0.04082  
+ monthOctober  monthNovember       monthMay      monthJuly  
+    -23.38954       -0.04082       -0.37729       -0.01875  
+optimizer (Nelder_Mead) convergence code: 0 (OK) ; 0 optimizer warnings; 1 lme4 warnings 
+Generalized linear mixed model fit by maximum likelihood
+  (Laplace Approximation) [glmerMod]
+ Family: poisson  ( log )
+Formula: eriophyoids ~ month + (1 | id)
+   Data: df
+      AIC       BIC    logLik  deviance  df.resid 
+1501.4698 1522.9081 -741.7349 1483.4698        71 
+Random effects:
+ Groups Name        Std.Dev.
+ id     (Intercept) 0.2782  
+Number of obs: 80, groups:  id, 4
+Fixed Effects:
+  (Intercept)     monthApril      monthJune    monthAugust  
+      2.63938       -0.84730        0.16170       -0.04082  
+ monthOctober  monthNovember       monthMay      monthJuly  
+    -23.38954       -0.04082       -0.37729       -0.01875  
+optimizer (Nelder_Mead) convergence code: 0 (OK) ; 0 optimizer warnings; 1 lme4 warnings 
